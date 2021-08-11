@@ -1,0 +1,40 @@
+<!-- sldsValidatorIgnore -->
+<template >
+    <header class="head" >
+        
+        
+    </header>
+        
+    <div>
+        <lightning-card  title="Covid App">
+            <lightning-button label="Sort" slot="actions" onclick={handleLikeButtonClick}></lightning-button>
+            <div class="slds-p-horizontal_large">
+            <main class="sub" >
+              <div class="one commonStyle"><p> Total Tested</p> {summary.previousDayTests}</p></div>
+              <div class="one commonStyle"><p> New Infected</p> {summary.activeCasesNew}</p></div>
+              <div class="one commonStyle"><p> Total Active</p> {summary.activeCases}</p></div>
+              <div class="one commonStyle"><p> Total Deaths</p> {summary.deaths}</p></div>
+              <div class="one commonStyle"><p> New Deaths</p> {summary.deathsNew}</p></div>
+              <div class="one commonStyle"><p> New Recovered</p> {summary.recoveredNew}</p></div>
+              <div class="one commonStyle"><p> Total Recovered</p> {summary.recovered}</p></div>
+              <div class="one commonStyle"><p> Total Cases</p> {summary.totalCases}</p></div>
+              
+              
+          </main>
+        </div>
+            <p></p>
+            
+              
+                <div class="datatable">
+                  <lightning-datatable 
+                          key-field="statesData.region"
+                          columns={columns}
+                          data={asc}
+                          hide-checkbox-column
+                          >
+                  </lightning-datatable>
+            </div> 
+        </lightning-card>
+    </div>
+
+</template>

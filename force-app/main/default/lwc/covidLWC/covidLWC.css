@@ -1,0 +1,50 @@
+
+.head {
+    width: 80vw;
+}
+
+.sub{
+    display:flex;
+    justify-content:space-around;
+    width: 100%;
+    color: white;
+}
+
+
+nav{
+    display:flex;
+    background-color: aqua;
+    justify-content: space-around;
+    
+    
+}
+.commonStyle {
+    padding:2em;
+    font-weight:bold;
+    width:auto;
+    text-align:center;
+    border-radius: 14px;
+}
+.one {
+    background-color:blue;
+    
+}
+.two {
+    background-color:yellow;
+}
+.three {
+    background-color:green;
+}
+.four {
+    background-color:rgb(175, 170, 170);
+}
+
+
+.tableHead{
+    margin-top:10px;
+    width: 800px;
+}
+
+  .datatable { 
+      padding: 10px;
+  }
